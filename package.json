@@ -1,0 +1,11 @@
+{
+  "name": "kk-phonetic-learning",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "speech": "node tools/synthesize.mjs",
+    "speech:check": "node tools/synthesize.mjs --check"
+  }
+}

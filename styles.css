@@ -1,0 +1,84 @@
+:root{--bg:#07182b;--surface:#0d2742;--surface2:#143551;--line:#2b4c67;--text:#f3f9fc;--muted:#adc5d5;--aqua:#72dce9;--pink:#f594b2;--gold:#f7d081}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% -15%,#17486b 0,#07182b 36%) fixed;color:var(--text);font:16px/1.6 system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif}button,a{font:inherit}button{cursor:pointer}a{color:var(--aqua)}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.siteHeader{background:#071b30ed;border-bottom:1px solid var(--line)}.headerInner{max-width:1400px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{color:#fff;text-decoration:none;font-weight:800;font-size:1.24rem;display:flex;align-items:center;gap:12px}.brandMark{background:var(--aqua);color:#09243a;padding:2px 8px;border-radius:8px;font-weight:900}.topNav{display:flex;gap:14px;align-items:center;color:var(--muted);font-size:.9rem}.topNav a{color:#d3e8f3;text-decoration:none}main{max-width:1400px;margin:auto;padding:28px 24px 64px;min-height:calc(100vh - 170px)}.siteFooter{max-width:1400px;margin:auto;padding:18px 24px 28px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.eyebrow{text-transform:uppercase;letter-spacing:.11em;color:var(--aqua);font-size:.8rem;font-weight:800}.pageIntro{margin:0 0 24px}.pageIntro h1{font-size:clamp(1.75rem,3vw,2.65rem);line-height:1.25;margin:5px 0 6px}.pageIntro p{color:var(--muted);margin:0}.section{background:#0b223b;border:1px solid var(--line);border-radius:20px;padding:23px;margin-bottom:20px}.sectionHead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:15px}.sectionHead h2{margin:0;font-size:1.22rem}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}.tile{border:1px solid #365b77;background:#153552;border-radius:14px;min-width:0;min-height:93px;display:grid;place-items:center;color:#fff;text-decoration:none}.tile:hover{background:#204763;border-color:var(--aqua)}.tileSymbol{font-family:"DejaVu Sans",Arial,sans-serif;font-size:1.8rem;line-height:1.2;font-weight:700;white-space:nowrap}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}.crumb{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:.9rem;margin-bottom:19px;flex-wrap:wrap}.crumb a{text-decoration:none}.soundHero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 28px;background:linear-gradient(120deg,#143c5c,#0a2642)}.soundHero h1{margin:4px 0 3px;font-family:"DejaVu Sans",sans-serif;font-size:clamp(2.8rem,5vw,4.8rem);line-height:1.1}.soundHero p{margin:0;color:#d3e7f0;font-size:1.25rem}.controlRow{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.btn{border-radius:11px;padding:10px 16px;min-height:44px;font-weight:740}.btn.primary{background:var(--aqua);border:1px solid var(--aqua);color:#07243a}.btn.secondary{background:transparent;color:var(--text);border:1px solid #7295aa}.btn.tertiary{background:#1c4561;color:#fff;border:1px solid #496d85}.btn[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}.btn:disabled{opacity:.52;cursor:not-allowed}.note{font-size:.9rem;color:var(--muted)}.detailLayout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px;margin-top:20px}.visualGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.visualCard{background:#061d34;border:1px solid var(--line);border-radius:16px;overflow:hidden;min-width:0}.visualCard h2{margin:0;padding:11px 16px;font-size:1rem;background:#102e4a}.visualFrame{height:290px;display:grid;place-items:center;overflow:hidden}.visualFrame canvas{width:100%;height:100%;object-fit:cover}.visualFrame img{display:block;width:100%;height:100%;object-fit:contain}.visualCard p{margin:0;padding:9px 15px 13px;color:var(--muted);font-size:.86rem}.explainer{padding:22px}.explainer h2{font-size:1.12rem;color:var(--pink);margin:0 0 8px}.explainer p{margin:0 0 17px}.explainer p:last-child{margin-bottom:0}.wordSection,.positionSection{margin-top:20px;padding:22px}.wordSection h2,.positionSection h2{font-size:1.18rem;margin:0 0 5px}.words{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:15px}.wordButton,.positionButton{border:1px solid #486b86;background:#193d5a;color:#fff;border-radius:12px;padding:13px 12px;min-height:60px;text-align:left}.wordButton:hover,.positionButton:hover{background:#245472}.wordButton span{color:var(--aqua);float:right}.positions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}.positionLabel{display:block;color:var(--aqua);font-weight:750;font-size:.9rem;margin-bottom:3px}.noPosition{border:1px dashed #496378;border-radius:12px;padding:12px;color:var(--muted);font-size:.91rem}.detailBottom{display:flex;justify-content:flex-end;margin-top:20px}.practiceShell{max-width:900px;margin:auto}.practiceTop{display:flex;justify-content:space-between;align-items:baseline;gap:15px}.progress{height:9px;background:#294a64;border-radius:999px;overflow:hidden;margin:17px 0 23px}.progressFill{height:100%;background:var(--aqua);width:0;transition:width .25s}.drill{padding:28px;text-align:center}.drillNo{color:var(--aqua);font-weight:800;letter-spacing:.08em}.drillWord{font-size:clamp(2.3rem,5vw,4.5rem);line-height:1.2;font-weight:760;margin:9px 0 20px}.drillActions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.practiceNav{display:flex;justify-content:space-between;margin-top:17px;gap:10px}.feedback{min-height:26px;color:var(--gold);font-size:.91rem;margin-top:12px}.drillContext{background:#143652;padding:17px 22px;margin-top:18px}.drillContext h2{font-size:1.05rem;margin:0 0 5px}.drillContext p{margin:0;color:#c8dce8}.done{background:#153c4d!important;border-color:var(--aqua)!important}.unsupported{color:var(--gold)}@media(max-width:1200px){.grid{grid-template-columns:repeat(6,minmax(0,1fr))}.detailLayout{grid-template-columns:1fr}.visualFrame{height:320px}}@media(max-width:800px){.grid{grid-template-columns:repeat(5,minmax(0,1fr))}.words{grid-template-columns:repeat(3,minmax(0,1fr))}.soundHero{align-items:start;flex-direction:column}}@media(max-width:600px){.headerInner{padding:12px 14px}.brand{font-size:1.04rem}.topNav{font-size:.83rem}main{padding:18px 12px 48px}.section{padding:17px 12px;border-radius:15px}.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.tile{min-height:84px}.tileSymbol{font-size:1.48rem}.soundHero{padding:19px}.visualGrid{grid-template-columns:1fr}.visualFrame{height:240px}.words,.positions{grid-template-columns:repeat(2,minmax(0,1fr))}.explainer,.wordSection,.positionSection{padding:18px}.drill{padding:21px}.siteFooter{padding:16px 14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.progressFill{transition:none}}
+
+/* 星空總表與凸起音標鍵 */
+body{background:linear-gradient(rgba(3,13,31,.36),rgba(3,13,31,.5)),url("assets/starfield.webp") center center/cover fixed #041126}
+.siteHeader{background:#071b30ed}.siteFooter{background:#071b30d9}
+.topNav:has(#navTrail:empty){display:none}
+.chartPage .pageIntro h1{font-size:clamp(2.1rem,3.6vw,3.18rem)}
+.chartPage .section{background:rgba(6,23,45,.78);backdrop-filter:blur(3px)}
+.chartPage .tile{position:relative;min-height:93px;color:#0b1820;font-weight:800;border:1px solid rgba(0,0,0,.18);border-radius:15px;transform:translateY(0);transition:transform .16s ease,box-shadow .16s ease,filter .16s ease}
+.chartPage .vowelSection .tile{background:linear-gradient(155deg,#fff0ca 0%,#ffd79e 55%,#f9bd80 100%);box-shadow:inset 0 2px 2px #ffffffb8,inset 0 -3px 1px #d58958,0 7px 0 #a75e3a,0 11px 14px #0008}
+.chartPage .consonantSection .tile{background:linear-gradient(155deg,#e8ffd5 0%,#bff0b2 55%,#90d896 100%);box-shadow:inset 0 2px 2px #ffffffb8,inset 0 -3px 1px #559b67,0 7px 0 #427657,0 11px 14px #0008}
+.chartPage .tile:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.chartPage .tile:active{transform:translateY(5px);box-shadow:inset 0 2px 6px #0003,0 2px 0 #385a46,0 4px 7px #0008}
+@media(max-width:600px){.chartPage .tile{min-height:84px}}
+@media(prefers-reduced-motion:reduce){.chartPage .tile{transition:none}}
+
+/* 第二層圖片完整置入圖框 */
+.visualFrame canvas{display:block;width:100%;height:100%;object-fit:contain}
+.visualFrame.hasPair{height:430px}
+.soundHero{min-height:118px}
+.soundHero h1{margin:0}
+.wordSection .words{margin-top:0}
+@media(max-width:600px){.visualFrame.hasPair{height:350px}}
+/* 第一層：放大音標及分類標題 */
+.chartPage .sectionHead h2{font-size:3.66rem;line-height:1.18}
+.chartPage .tileSymbol{font-size:5.4rem;line-height:1.1}
+.chartPage .tile{min-height:154px;padding:10px 5px}
+@media(max-width:600px){
+ .chartPage .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+ .chartPage .tileSymbol{font-size:4.44rem}
+ .chartPage .tile{min-height:135px}
+}
+@media(max-width:1200px){.chartPage .grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:800px){.chartPage .grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.chartPage .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 第二層：精簡音標標題與雙行例字 */
+.soundHero{width:max-content;max-width:100%;min-width:170px;min-height:0;padding:14px 30px;justify-content:center}
+.soundHero h1{margin:0;font-size:clamp(2.8rem,5vw,4.8rem)}
+.wordSection .words{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.wordButton{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;min-width:0;min-height:112px;padding:15px 44px 15px 18px}
+.wordButton .wordLabel{color:#fff;font-size:2rem;line-height:1.15;font-weight:750;float:none;overflow-wrap:anywhere}
+.wordButton .wordIPA{color:#b9e6ed;font-family:"DejaVu Sans",Arial,sans-serif;font-size:1.18rem;line-height:1.3;float:none;overflow-wrap:anywhere}
+.wordButton .wordPlay{position:absolute;right:16px;top:20px;color:var(--aqua);font-size:1rem;float:none}
+@media(max-width:800px){.wordSection .words{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.wordSection .words{grid-template-columns:1fr}.soundHero{padding:12px 22px}.wordButton{min-height:104px}}
+/* 第二層：可播放的立體音標鍵 */
+.soundTitle{display:block;width:max-content;max-width:100%;margin:0}
+.soundButton{display:block;min-width:170px;min-height:130px;max-width:100%;padding:12px 32px;border:1px solid #ffffff66;border-radius:28px;color:#101d22;font-family:"DejaVu Sans",Arial,sans-serif;font-size:clamp(2.8rem,5vw,4.8rem);font-weight:800;line-height:1.12;text-align:center;transition:transform .14s ease,filter .14s ease,box-shadow .14s ease}
+.soundButton.vowel{background:linear-gradient(155deg,#fff0ca 0%,#ffd79e 55%,#f9bd80 100%);box-shadow:inset 0 3px 2px #fff9,inset 0 -4px 2px #c77e51,0 9px 0 #a75e3a,0 15px 20px #0009}
+.soundButton.consonant{background:linear-gradient(155deg,#e8ffd5 0%,#bff0b2 55%,#90d896 100%);box-shadow:inset 0 3px 2px #fff9,inset 0 -4px 2px #559b67,0 9px 0 #427657,0 15px 20px #0009}
+.soundButton:hover{filter:brightness(1.07);transform:translateY(-2px)}
+.soundButton:active,.soundButton.isPlaying{transform:translateY(7px);box-shadow:inset 0 2px 8px #0004,0 2px 0 #365e50,0 5px 9px #0008}
+.srOnly{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.soundButton{min-height:110px;min-width:145px;border-radius:23px}}
+@media(prefers-reduced-motion:reduce){.soundButton{transition:none}}
+.drillPhrase{font-size:clamp(1.65rem,3.5vw,2.65rem);line-height:1.4;font-weight:720;margin:17px auto 24px;max-width:760px;text-wrap:balance}
+.targetLetters{color:#ff656d;font-weight:900;text-decoration:underline;text-decoration-color:#ff656d66;text-underline-offset:.1em}
+.phraseSection{margin-top:21px;padding:22px}
+.phraseSection h2{margin:0 0 14px;font-size:1.24rem}
+.phraseList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.phraseItem{display:flex;align-items:baseline;gap:10px;text-align:left;min-width:0;min-height:58px;padding:11px 13px;border:1px solid #426782;border-radius:11px;background:#153752;color:#f5fbff;line-height:1.35}
+.phraseItem:hover,.phraseItem.selected{background:#24506d;border-color:#73ddea}
+.phraseNumber{color:#89dfe8;font-weight:800;flex:none;font-variant-numeric:tabular-nums}
+.phraseItem .checkmark{margin-left:auto;color:#9cf2d3}
+@media(max-width:680px){.phraseList{grid-template-columns:1fr}.phraseSection{padding:16px}.drillPhrase{font-size:clamp(1.45rem,6vw,2rem)}}
+
+@media(max-width:600px){.practiceTop{flex-direction:column;align-items:flex-start;gap:0}}
+.drillControls{display:flex;align-items:center;justify-content:center;gap:clamp(16px,5vw,55px);margin:18px auto 0}
+.drillSkip{min-width:128px;min-height:58px;padding:8px 17px;border:0;border-radius:10px;background:#18b9f5;color:#052239;font-weight:800;font-size:1.16rem;box-shadow:0 4px 0 #0a72a9}
+.drillSkip:hover:not(:disabled){background:#6cdbff}
+.drillSkip:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 #0a72a9}
+.drillSkip:disabled{opacity:.4;cursor:not-allowed}
+.playTriangle{position:relative;display:grid;place-items:center;flex:none;width:75px;height:44px;border:0;background:transparent}
+.playTriangle::before{content:"";position:absolute;inset:0;background:#18b9f5;clip-path:polygon(0 0,100% 50%,0 100%)}
+.playTriangle:hover::before{background:#6cdbff}
+.playTriangle:active{transform:scale(.95)}
+.drillControls button:focus-visible{outline:3px solid #f7d081;outline-offset:5px}
+@media(max-width:600px){.drillControls{gap:8px}.drillSkip{min-width:86px;padding:7px;font-size:1rem}.playTriangle{width:60px;height:44px}}
+.drillPhrase{margin-bottom:4px}
+.drillTranslation{color:#c9e1eb;font-size:clamp(1.05rem,2.1vw,1.38rem);line-height:1.5;margin:0 auto 18px}
+.phraseText{display:flex;flex-direction:column;gap:5px;min-width:0}
+.phraseEnglish{font-size:1.07rem;line-height:1.4}
+.phraseTranslation{color:#c9e1eb;font-size:.96rem;line-height:1.5}
+.phraseItem{min-height:78px;align-items:flex-start}
