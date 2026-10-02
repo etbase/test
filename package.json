@@ -4,8 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node tools/serve.mjs",
-    "speech": "node tools/synthesize.mjs",
-    "speech:check": "node tools/synthesize.mjs --check"
+    "dev": "node tools/serve.mjs"
   }
 }
