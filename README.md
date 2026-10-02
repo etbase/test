@@ -18,7 +18,7 @@ npm run dev
 
 再開啟 http://localhost:8000。不需執行 `npm install`。
 
-也可以直接開啟 `index.html`。請保留 `assets` 資料夾的位置。單音音檔與圖片隨專案附上；例字和短句的朗讀使用瀏覽器或作業系統的美式英語語音，音色會因裝置而異。
+也可以直接開啟 `index.html`。請保留 `assets` 資料夾的位置。音標、例字和短句都是放在網站裡的固定美式英語音檔：音標與例字使用 Piper `en_US-lessac-high`，短句使用 Kokoro `af_heart`。
 
 ## 主要檔案
 
