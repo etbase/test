@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" role="img" aria-labelledby="title desc">
+<title id="title">/i/ 口型視覺概念</title><desc id="desc">展唇・前高。此為示意圖，尚未進行專業發音校訂。</desc>
+<rect width="680" height="400" rx="28" fill="#F5F7F3"/>
+<circle cx="260" cy="194" r="143" fill="#F8EBDD"/>
+<path d="M215 174q18 -15 36 0 M280 174q18 -15 36 0" stroke="#665B55" stroke-width="4" fill="none" stroke-linecap="round"/>
+<ellipse cx="266" cy="234" rx="51.0" ry="11.0" stroke="#73A9A2" stroke-width="6" fill="#F7D0C5"></ellipse>
+<path d="M220 270 Q265 257 307 270" stroke="#73A9A2" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+<rect x="439" y="63" width="174" height="54" rx="16" fill="#E3ECE8"/>
+<text x="526" y="98" font-family="Arial, sans-serif" fill="#37675D" font-size="32" text-anchor="middle">/i/</text>
+<text x="439" y="160" font-size="18" font-family="Arial, sans-serif" fill="#4B6263">ARTICULATION</text>
+<text x="439" y="203" font-size="22" font-family="Arial, sans-serif" fill="#3C514B">展唇・前高</text>
+<text x="439" y="335" font-size="15" font-family="Arial, sans-serif" fill="#71817D">CONCEPT · NOT VALIDATED</text>
+</svg>

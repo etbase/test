@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KK Chart Studio Prototype</title>
+  <link rel="stylesheet" href="prototype.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">KK PHONETIC LEARNING</p>
+      <h1>把 KK 音標總表，做成更好讀也更好看的學習首頁</h1>
+      <p class="intro">首頁保留圖表邏輯，但用更乾淨的留白、柔和色塊與編輯感版面。點任一音標，就進入「發音教室」。</p>
+      <div class="toolbar">
+        <button class="chip is-active">KK</button>
+        <button class="chip">IPA</button>
+        <button class="chip">母音</button>
+        <button class="chip">子音</button>
+      </div>
+    </div>
+    <div class="hero-note">
+      <div class="note-card">
+        <strong>建議</strong>
+        <p>首頁做圖表，詳細頁再做插圖＋短動畫。這樣最好學，也最不容易亂。</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section-block">
+      <div class="section-head">
+        <h2>母音 Vowels</h2>
+        <p>單母音依前、中、後整理；雙母音獨立成列。</p>
+      </div>
+      <div class="chart-wrap">
+        <table class="chart-table">
+          <thead>
+            <tr>
+              <th>分類</th>
+              <th>Front</th>
+              <th>Central</th>
+              <th>Back</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>High</th>
+              <td><button class="symbol" data-symbol="i">i<span>iː</span></button><button class="symbol" data-symbol="I">ɪ<span>ɪ</span></button></td>
+              <td>—</td>
+              <td><button class="symbol" data-symbol="u">u<span>uː</span></button><button class="symbol" data-symbol="U">ʊ<span>ʊ</span></button></td>
+            </tr>
+            <tr>
+              <th>Mid</th>
+              <td><button class="symbol" data-symbol="e">e<span>eɪ</span></button><button class="symbol" data-symbol="E">ɛ<span>ɛ</span></button></td>
+              <td><button class="symbol" data-symbol="schwa">ə<span>ə</span></button><button class="symbol" data-symbol="er">ɝ<span>ɝː</span></button></td>
+              <td><button class="symbol" data-symbol="o">o<span>oʊ</span></button><button class="symbol" data-symbol="open_o">ɔ<span>ɔː</span></button></td>
+            </tr>
+            <tr>
+              <th>Low</th>
+              <td><button class="symbol" data-symbol="ae">æ<span>æ</span></button></td>
+              <td><button class="symbol" data-symbol="caret">ʌ<span>ʌ</span></button></td>
+              <td><button class="symbol" data-symbol="a">ɑ<span>ɑ</span></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mini-cards">
+        <article class="mini-card">
+          <h3>雙母音 Diphthongs</h3>
+          <div class="symbol-row">
+            <button class="symbol" data-symbol="au">aʊ<span>aʊ</span></button>
+            <button class="symbol" data-symbol="ai">aɪ<span>aɪ</span></button>
+            <button class="symbol" data-symbol="oi">ɔɪ<span>ɔɪ</span></button>
+          </div>
+        </article>
+        <article class="mini-card">
+          <h3>半母音 Semi-vowels</h3>
+          <div class="symbol-row">
+            <button class="symbol" data-symbol="j">j<span>j</span></button>
+            <button class="symbol" data-symbol="w">w<span>w</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>子音 Consonants</h2>
+        <p>用發音方式 × 發音部位整理，比單純清濁分組更直觀。</p>
+      </div>
+      <div class="consonant-grid">
+        <div class="cons-card">
+          <h3>Stops</h3>
+          <p>p / b · t / d · k / g</p>
+        </div>
+        <div class="cons-card">
+          <h3>Affricates</h3>
+          <p>tʃ / dʒ</p>
+        </div>
+        <div class="cons-card">
+          <h3>Fricatives</h3>
+          <p>f / v · θ / ð · s / z · ʃ / ʒ · h</p>
+        </div>
+        <div class="cons-card">
+          <h3>Nasals</h3>
+          <p>m · n · ŋ</p>
+        </div>
+        <div class="cons-card">
+          <h3>Liquids</h3>
+          <p>l · r</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block lesson-block">
+      <div class="section-head">
+        <h2>發音教室 Preview</h2>
+        <p>這是點進某一個音標後的版型示意。</p>
+      </div>
+      <div class="lesson-layout">
+        <div class="visual-panel">
+          <div class="big-symbol" id="bigSymbol">æ</div>
+          <div class="illustration-card">
+            <div class="mouth-art">
+              <div class="face-line"></div>
+              <div class="mouth-shape" id="mouthShape"></div>
+              <div class="tongue" id="tongue"></div>
+            </div>
+            <p>口型 / 舌位示意圖（風格上可做成淡色教育插圖）</p>
+          </div>
+          <div class="animation-card">
+            <div class="loop-demo" id="loopDemo">
+              <div class="loop-mouth"></div>
+            </div>
+            <p>3–5 秒動畫建議使用 SVG / Lottie 或 WebM；GIF 只做備援。</p>
+          </div>
+        </div>
+        <div class="lesson-copy" id="lessonCopy">
+          <span class="detail-tag">Front vowel</span>
+          <h3>/æ/ 的發音教室</h3>
+          <p>嘴巴張得比較開，舌頭放低且偏前，聲音短促清楚，接近 cat、apple 裡的母音。</p>
+          <ul>
+            <li>嘴型：張開</li>
+            <li>舌位：前低</li>
+            <li>聲帶：震動</li>
+          </ul>
+          <div class="examples">
+            <button>cat</button>
+            <button>apple</button>
+            <button>bag</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="prototype.js"></script>
+</body>
+</html>
