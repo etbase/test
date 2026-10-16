@@ -157,32 +157,33 @@ body:has(.pageNav:not([hidden])) main{padding-top:20px}
 .textLink{color:var(--blue);font-weight:600}
 .textLink:hover{color:var(--deep)}
 
-.soundTitle{margin:0}
+.soundTitle{margin:0;width:max-content}
 .soundButton{
   display:grid;place-items:center;
-  min-width:0;min-height:0;padding:0;
-  border:0;border-radius:0;
-  background:transparent;
+  width:152px;height:152px;aspect-ratio:1;
+  padding:0;cursor:pointer;
+  border:1px solid var(--line);
+  border-radius:min(24px,28%);
+  background:var(--card);
   color:var(--blue);
   font-family:"DejaVu Sans",Arial,sans-serif;
-  font-size:clamp(4.4rem,9vw,6.6rem);font-weight:650;line-height:.9;
+  font-size:4rem;font-weight:680;line-height:1;
   box-shadow:none;
-  transition:color var(--move);
+  transition:background var(--move),border-color var(--move),color var(--move),transform var(--move);
 }
-.soundButton:hover{transform:none;background:transparent;color:var(--deep)}
-.soundButton.vowel,.soundButton.consonant{background:transparent;color:var(--blue)}
-.soundButton.vowel:hover,.soundButton.consonant:hover{background:transparent;color:var(--deep)}
-.soundButton:active,.soundButton.isPlaying{transform:translateY(2px)}
+.soundButton:hover,.soundButton:focus-visible{background:var(--wash);border-color:var(--blue);color:var(--deep)}
+.soundButton.vowel,.soundButton.consonant{background:var(--card);color:var(--blue)}
+.soundButton.vowel:hover,.soundButton.consonant:hover,.soundButton.vowel:focus-visible,.soundButton.consonant:focus-visible{background:var(--wash);border-color:var(--blue);color:var(--deep)}
+.soundButton:active,.soundButton.isPlaying{transform:translateY(2px);background:var(--soft);border-color:var(--blue)}
 
 .visualGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
 .visualGrid.hasSequence{align-items:start}
 .visualGrid.hasSequence .visualCard{height:auto}
 .visualCard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:28px;overflow:hidden;min-width:0;box-shadow:none}
 .visualCard h2{margin:0;padding:22px 24px 0;font-size:1.05rem;font-weight:560;letter-spacing:.01em;color:var(--deep)}
-.visualFrame{min-height:280px;height:auto;display:grid;place-items:center;overflow:hidden;background:var(--wash);padding:22px 24px}
-.visualFrame canvas{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}
-.visualFrame.isSequence{height:auto;display:block}
-.visualFrame.isSequence canvas{width:100%;height:auto;max-height:none;object-fit:contain}
+.visualFrame{width:100%;height:auto;display:block;overflow:hidden;background:var(--wash);padding:0}
+.visualFrame canvas{display:block;width:100%;height:auto}
+.visualFrame.isSequence canvas{width:100%;height:auto}
 .visualCard p,.quietNote{margin:0;padding:8px 24px 22px;color:var(--muted);font-size:.84rem;line-height:1.6}
 .explainer{margin-top:0;padding:28px}
 .explainer h2{margin:22px 0 8px;color:var(--blue);font-size:1.2rem;font-weight:560;letter-spacing:.01em}
@@ -262,7 +263,7 @@ body:has(.pageNav:not([hidden])) main{padding-top:20px}
   .tile{min-height:84px}
   .tileSymbol{font-size:2rem}
   .learnHead,.practiceTop{flex-direction:column;align-items:flex-start}
-  .visualFrame{min-height:220px;padding:16px}
+  .visualFrame{min-height:0;padding:0}
   .positions,.phraseList,.words{grid-template-columns:1fr}
   .drillControls{gap:10px}
   .siteFooter{padding:16px}
@@ -290,7 +291,6 @@ body:has(.pageNav:not([hidden])) main{padding-top:20px}
 .searchLabel input{border:0;background:transparent;color:var(--text);font:inherit;min-width:0;width:9rem;min-height:42px}
 .searchLabel input:focus{outline:none}
 .vowelBoard{display:grid;grid-template-columns:repeat(3,max-content);justify-content:start;gap:22px 28px;align-items:center}
-.chartEmpty{color:var(--muted)}
 .symbolCluster{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start}
 .vowelCell .symbolCluster{flex-wrap:nowrap}
 .symbol{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:var(--symbol-size);height:var(--symbol-size);flex:0 0 var(--symbol-size);aspect-ratio:1;padding:0;border:1px solid var(--line);border-radius:min(24px,28%);background:var(--card);color:var(--blue);text-decoration:none}
@@ -301,10 +301,11 @@ body:has(.pageNav:not([hidden])) main{padding-top:20px}
 .consonantGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .consCard{background:var(--wash);border:1px solid var(--line);border-radius:24px;padding:22px}
 .consCard h3{margin:0 0 4px;color:var(--muted);font-size:.8rem;font-weight:560;letter-spacing:.03em}
-.consCard p{margin:0 0 14px;color:var(--muted);font-size:.78rem}
-.diagramPair{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch;margin-bottom:18px}
-.diagramPair .visualCard{height:100%}
-.studioLayout{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:start}
+.consCard p{margin:0;color:var(--muted);font-size:.78rem}
+.consCard .symbolCluster{margin-top:14px}
+.diagramPair,.detailLower{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.diagramPair{margin-bottom:18px}
+.detailLower .explainer,.detailLower .wordSection{margin-top:0}
 .studioGallery,.studioAside{display:grid;gap:18px}
 .studioPending{margin:0;padding:28px 24px 26px;color:var(--muted);text-align:left}
 .neighborNav{display:flex;flex-wrap:wrap;gap:8px}
@@ -314,7 +315,7 @@ body:has(.pageNav:not([hidden])) main{padding-top:20px}
 .tile:hover{box-shadow:none}
 
 @media(max-width:900px){
-  .chartTop,.studioLayout,.diagramPair,.consonantGrid{grid-template-columns:1fr}
+  .chartTop,.detailLower,.diagramPair,.consonantGrid{grid-template-columns:1fr}
   .chartTop{flex-direction:column;align-items:flex-start;gap:16px}
 }
 @media(max-width:720px){
